@@ -3,8 +3,9 @@ import graph
 import database
 import matplotlib.pyplot as plt
 import pylab
+import os
 from telebot import types
-bot = telebot.TeleBot("---")
+bot = telebot.TeleBot(os.environ['TELEGRAM_TOKEN']
 
 markup = types.ReplyKeyboardMarkup()
 itembtna = types.KeyboardButton('GetGraph')
